@@ -1,0 +1,320 @@
+@prefix spec: <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl> a owl:Ontology ;
+ rdfs:label "Integrating Construction Delivery and Asset Management Information: An Ontology-Based Model"@en ;
+ owl:versionInfo "1.0" ;
+ dcterms:description "The study-specific model is expressed in OWL/Turtle. Existing road and facility ontologies, BOT, Digital Construction, and PROV-O informed its conceptual design."@en ;
+ dcterms:relation "Integrating Construction Delivery and Asset Management Information: An Ontology-Based Model" .
+
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-KISCON> a dcterms:BibliographicResource ;
+ rdfs:label "KISCON / construction work ledger"@en ;
+ dcterms:description "Construction work ledger PDF extracts | Contractors report ledger particulars to the owner. KISCON retains and provides the ledger information. The 2023 report identifies CIIC as the operator; this institutional attribution reflects that report. The owner named in the R3 records is the Wonju Regional Construction Management Administration; being a system operator does not make an organization a construction participant. | The seven R3 ledger PDFs were obtained from KISCON on request, as confirmed by the author. Other users may request records for specified construction works by submitting an official letter to KISCON. Access through this procedure does not establish permission to redistribute the PDFs; they are retained research inputs and are not redistributed in this supplement. | R3 ledger IDs: 1103643, 1161045, 1284971, 1411152, 1559005, 1688411, 1930079. Keep installment and whole-work amounts and dates, notification and confirmation information, print time, and revision number distinct. The common initial contract and commencement dates are 13 and 30 July 2018, respectively. | Observed ledger evidence: R3 only."@en ;
+ rdfs:seeAlso <https://yoonsleeprojects.github.io/ConstructionOntology/#source-KISCON> .
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-KISCON> dcterms:source <https://www.kiscon.net/> .
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-KISCON> dcterms:source <https://cws.kiscon.net/> .
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_WORK> a dcterms:BibliographicResource ;
+ rdfs:label "CALS / Ministry of Land, Infrastructure and Transport"@en ;
+ dcterms:description "Work information and records of the facilities delivered | MOLIT agencies and contracted site users supply work information; CALS makes it available. KICT is identified on the system service page. Record contributors, the system service provider, and the owner of each work have distinct roles. | The work information was collected from the public system website; the study uses the retained information and comparison material. No new comprehensive candidate search is claimed. | R1: C2002061, Seongnam–Janghowon section 2. R3: C2018023, Jeongseon–Bukmyeon. CALS identifiers refer to CALS records, not to all contributing records. R3 outcomes are Banjeom Bridge, Yeoryang Bridge, and Yeoryang Tunnel. | Work information for R1 and R3; CALS is a source used in the applications, not the defining source of every WorkRecord. For R3, the retained comparisons associate records by work title, route, section, and owner but do not establish uniqueness within a documented CALS candidate set. The combined R3 view is conditional on this cross-system correspondence."@en ;
+ rdfs:seeAlso <https://yoonsleeprojects.github.io/ConstructionOntology/#source-CALS_WORK> .
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_WORK> dcterms:source <https://www.calspia.go.kr/portal/intro/introCms.do> .
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_WORK> dcterms:source <https://www.calspia.go.kr/portal/intro/introPtl.do> .
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_REGISTER> a dcterms:BibliographicResource ;
+ rdfs:label "CALS / road-management offices"@en ;
+ dcterms:description "Facility registers, original-work fields, inspection plans, and inspection-history records | The system provides entries maintained by the relevant road-management office. The records name Suwon in R1, Nonsan in R2, and Chungju in R4. These facility-management roles are distinct from the roles of the system operator and the party performing the inspection. | Public CALS records are retained as source information, transcriptions, and tables of inspection plans and inspection-history records. Source query dates and event dates are kept separate. | R1 register fcno values end in BAF46991E054B099289CEB28 and BAF56991E054B099289CEB28; both record a completion date of 31 December 2013. R2 fcno: 1B08F838AB8B6FD7E054B099289CEB28, Route 4. R4 fcno: F18C7A6BC1343A7DE044B099289CEB28, Route 19. R2 has 17 plans and 17 inspection-history records, not 34 completed inspections. | In R1, the assignment of construction-stage rows to register entries distinguished by direction remains unresolved; the R2 and R4 Mungok bridges are separate structures."@en ;
+ rdfs:seeAlso <https://yoonsleeprojects.github.io/ConstructionOntology/#source-CALS_REGISTER> .
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_REGISTER> dcterms:source <https://www.calspia.go.kr/portal/intro/introCALS.do> .
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-FMS> a dcterms:BibliographicResource ;
+ rdfs:label "FMS / Korea Authority of Land & Infrastructure Safety"@en ;
+ dcterms:description "Facility identification and dated safety and performance assessment information | KALIS operates the system, and MOLIT provides oversight. Retain the managing-agency labels in each record separately from the identities of the operator and the party performing the assessment. | Public facility-management records were collected from the system website. The retained R1 extract records a collection date of 27 August 2026 and an information date of 30 June 2026. | R1: TU2014-0000019 and TU2014-0000020, Baekma road tunnels. Latest recorded safety and performance assessments: 28 November 2024, grade A. A railway tunnel with the same name is excluded from that correspondence. The next-assessment date is a scheduled date. | Dated R1 condition snapshots; neither a complete life-cycle history nor an FMS history for R3 is implied."@en ;
+ rdfs:seeAlso <https://yoonsleeprojects.github.io/ConstructionOntology/#source-FMS> .
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-FMS> dcterms:source <https://www.fms.or.kr/> .
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-FMS> dcterms:source <https://eai.fms.or.kr/com/mainForm.do> .
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-NOTICES> a dcterms:BibliographicResource ;
+ rdfs:label "Wonju Regional Construction Management Administration"@en ;
+ dcterms:description "Separate management-service tender and award notices | The Wonju administration issued and posted the notices and is the procuring agency. The listed engineering firms are service participants. Electronic bidding through G2B does not mean that the research copy was collected from G2B. | The records were collected from the issuing agency's public website, and the retained tender and award PDFs were inspected. | Tender notice: 9 May 2018, Notice 2018-038, page 1. Award notice: 25 May 2018, a separate record, page 1; Kunhwa 43%, Soosung Engineering 37%, Donghae Engineering 20%. Both name the Route 42 Jeongseon–Bukmyeon work; neither provides a KISCON or CALS identifier. | R3 management-service and participation information; not a construction-contract instrument."@en ;
+ rdfs:seeAlso <https://yoonsleeprojects.github.io/ConstructionOntology/#source-NOTICES> .
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-NOTICES> dcterms:source <https://www.molit.go.kr/wrocm/USR/tender/m_15962/mng.jsp?ID=27624> .
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-NOTICES> dcterms:source <https://www.molit.go.kr/wrocm/USR/tender/m_15962/mng.jsp?ID=27690> .
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-SEUMTER> a dcterms:BibliographicResource ;
+ rdfs:label "Seumter / building administration"@en ;
+ dcterms:description "Building permit, commencement report, and building register | Applicants submit administrative documents; the competent local authority handles permits and register administration; Seumter provides the national service under MOLIT. The 2023 report identifies Korea Real Estate Board as the delegated operator. No case-specific issuing authority is assigned without a record. | No building application records were observed or collected for B01; the manuscript includes only the modeled source types. | PermitRecord, CommencementRecord, and the building-related use of StructureRegisterRecord retain distinct meanings. A road-work start date in CALS is not treated as a building commencement report. | Modeled and unpopulated: B01."@en ;
+ rdfs:seeAlso <https://yoonsleeprojects.github.io/ConstructionOntology/#source-SEUMTER> .
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-SEUMTER> dcterms:source <https://m.eais.go.kr/mbi/mbi/ada08/MBIADA08L02> .
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-SEUMTER> dcterms:source <https://www.eais.go.kr/moct/bci/aza01/BCIAZA01F02?returnUrl=%2Fbci%2FBCIAAA03L02> .
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CEMS> a dcterms:BibliographicResource ;
+ rdfs:label "CEMS / Korea Association of Construction Engineering & Management"@en ;
+ dcterms:description "Engineering-service registration and performance information | Service businesses submit information, and the relevant administrative agencies approve it or issue notifications; the association supports the management of engineering-service information. These institutional roles do not identify any R3 participant. | Institutional context is drawn from the 2023 report and system guidance. The empirical service evidence for R3 consists of the Wonju notices, not a presumed CEMS extract. | No R3 CEMS record identifier is assigned. | Institutional source context only."@en ;
+ rdfs:seeAlso <https://yoonsleeprojects.github.io/ConstructionOntology/#source-CEMS> .
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CEMS> dcterms:source <https://www.cems.kr/Login/20220208.pdf> .
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-QUALITY> a dcterms:BibliographicResource ;
+ rdfs:label "CALS quality-test records / CQR"@en ;
+ dcterms:description "Two quality-test certificates | CQR is the testing agency recorded on the certificates; Chungju is the recorded owner, and Jeongjin is the contractor. CALS provides access but does not perform the tests. | Public CALS certificate information is retained in the research material, with a recorded retrieval date of 31 August 2026. | R4 certificates 20231214888 and 20231214889 were issued on 12 December 2023; the sampling locations are lanes 1 and 2 of the Mungok Bridge–Munsan Interchange segment. | Later pavement work supported by segment-level evidence, without establishing bridge-only treatment or a separate maintenance contract."@en ;
+ rdfs:seeAlso <https://yoonsleeprojects.github.io/ConstructionOntology/#source-QUALITY> .
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-QUALITY> dcterms:source <https://www.calspia.go.kr/portal/intro/introPtl.do> .
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-STUDY> a dcterms:BibliographicResource ;
+ rdfs:label "This study"@en ;
+ dcterms:description "Integrated information representations and record associations | The study defines IntegratedWorkData and RecordMapping. Source agencies retain authorship of and responsibility for their own records. | The collected records are organized using construction works and their relationships with physical structures as references. A correspondence established through record comparison is distinct from a cross-reference stored in an original record. | IntegratedWorkData → hasMapping → RecordMapping → sourceRecord → SourceRecord; represents points to ConstructionWork. Scope and evidence remain attached to each association. | A study-defined structure; application instances are maintained outside the public documentation package."@en ;
+ rdfs:seeAlso <https://yoonsleeprojects.github.io/ConstructionOntology/#source-STUDY> .
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-REPORT2023> a dcterms:BibliographicResource ;
+ rdfs:label "MOLIT and CIIC, 2023"@en ;
+ dcterms:description "Study on the integrated construction industry information platform | An institutional and integration-planning reference cited in the manuscript; proposed shared work references do not establish the existence of a currently operating service. | The retained 2023 report; not a channel for collecting application records. | Institutional context in 2023, shared work information, and work–service–structure relationships. Case evidence comes from the individual records collected. | Institutional design basis, not evidence of case identity."@en ;
+ rdfs:seeAlso <https://yoonsleeprojects.github.io/ConstructionOntology/#source-REPORT2023> .
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl> dcterms:references <https://w3c-lbd-cg.github.io/bot/> .
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl> dcterms:references <https://digitalconstruction.github.io/v/0.3/index.html> .
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl> dcterms:references <https://digitalconstruction.github.io/Information/v/0.5/> .
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl> dcterms:references <https://www.w3.org/TR/prov-o/> .
+
+spec:ConstructionWork a owl:Class ;
+ rdfs:label "ConstructionWork"@en ;
+ rdfs:comment "An actual construction activity, distinct from any record describing it. MaintenanceWork specializes this class for later repair or improvement works."@en ;
+ dcterms:description "Apply within the record, activity-related, spatial, and temporal scope specified in Sources."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-KISCON>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_WORK>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_REGISTER> .
+
+spec:IntegratedWorkData a owl:Class ;
+ rdfs:label "IntegratedWorkData"@en ;
+ rdfs:comment "An integrated information representation that organizes linked source records about a construction work and its related activities and structures."@en ;
+ dcterms:description "Constructed in this study from contributing records; not a single pre-existing record in a national system."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-STUDY>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-KISCON>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_WORK>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-NOTICES>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_REGISTER>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-FMS>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-QUALITY> .
+
+spec:RecordMapping a owl:Class ;
+ rdfs:label "RecordMapping"@en ;
+ rdfs:comment "A construct defined in this study that associates a contributing source record with the integrated information representation of a construction work while retaining the evidence and scope of that association."@en ;
+ dcterms:description "Constructed in this study from contributing records; not a single pre-existing record in a national system. In the study application, each mapping associates one IntegratedWorkData representation with one SourceRecord. This usage is not an OWL cardinality restriction."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-STUDY>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-KISCON>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_WORK>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-NOTICES>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_REGISTER>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-FMS>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-QUALITY> .
+
+spec:SourceRecord a owl:Class ;
+ rdfs:label "SourceRecord"@en ;
+ rdfs:comment "A record maintained in a source information system or issued by an agency, distinct from the work, service, or asset to which it refers."@en ;
+ dcterms:description "Apply within the record, activity-related, spatial, and temporal scope specified in Sources."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-KISCON>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_WORK>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_REGISTER>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-FMS>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-NOTICES>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-SEUMTER>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-QUALITY> .
+
+spec:EngineeringService a owl:Class ;
+ rdfs:label "EngineeringService"@en ;
+ rdfs:comment "A design, supervision, management, or assessment service commissioned in relation to a construction work."@en ;
+ dcterms:description "Apply within the record, activity-related, spatial, and temporal scope specified in Sources."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-NOTICES>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CEMS>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_WORK> .
+
+spec:Contract a owl:Class ;
+ rdfs:label "Contract"@en ;
+ rdfs:comment "A contractual obligation concerning a construction work or an engineering service."@en ;
+ dcterms:description "Apply within the record, activity-related, spatial, and temporal scope specified in Sources."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-KISCON>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_WORK>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-NOTICES> .
+
+spec:Organisation a owl:Class ;
+ rdfs:label "Organisation"@en ;
+ rdfs:comment "A party that commissions, performs, or participates in a construction work or engineering service."@en ;
+ dcterms:description "Apply within the record, activity-related, spatial, and temporal scope specified in Sources."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-KISCON>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-NOTICES>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_WORK> .
+
+spec:Structure a owl:Class ;
+ rdfs:label "Structure"@en ;
+ rdfs:comment "A physical structure created or modified by a construction work. Building and CivilStructure are its specializations."@en ;
+ dcterms:description "Apply within the record, activity-related, spatial, and temporal scope specified in Sources."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_WORK>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_REGISTER>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-FMS>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-SEUMTER> .
+
+spec:Inspection a owl:Class ;
+ rdfs:label "Inspection"@en ;
+ rdfs:comment "An inspection or assessment activity actually performed on a structure, distinct from a plan or the record documenting that activity."@en ;
+ dcterms:description "Apply within the record, activity-related, spatial, and temporal scope specified in Sources."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_REGISTER>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-FMS> .
+
+spec:MaintenanceWork a owl:Class ;
+ rdfs:label "MaintenanceWork"@en ;
+ rdfs:comment "A specialization of ConstructionWork for later repair or improvement works."@en ;
+ rdfs:subClassOf spec:ConstructionWork ;
+ dcterms:description "Apply within the record, activity-related, spatial, and temporal scope specified in Sources."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-QUALITY> .
+
+spec:Building a owl:Class ;
+ rdfs:label "Building"@en ;
+ rdfs:comment "A physical building, modeled as a specialization of Structure. Building applications described in the article remain unpopulated."@en ;
+ rdfs:subClassOf spec:Structure ;
+ dcterms:description "Modeled building context B01; no observed application records."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-SEUMTER> .
+
+spec:CivilStructure a owl:Class ;
+ rdfs:label "CivilStructure"@en ;
+ rdfs:comment "A civil structure, modeled as a specialization of Structure."@en ;
+ rdfs:subClassOf spec:Structure ;
+ dcterms:description "Apply within the record, activity-related, spatial, and temporal scope specified in Sources."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_WORK>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_REGISTER> .
+
+spec:ConstructionLedgerRecord a owl:Class ;
+ rdfs:label "ConstructionLedgerRecord"@en ;
+ rdfs:comment "A construction work ledger entry containing details of a work, including contractual particulars and participation information."@en ;
+ rdfs:subClassOf spec:SourceRecord ;
+ dcterms:description "Seven observed R3 ledger extracts; no actual ledger evidence is assigned to R1, R2, or R4."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-KISCON> .
+
+spec:WorkRecord a owl:Class ;
+ rdfs:label "WorkRecord"@en ;
+ rdfs:comment "A source-system record describing a construction work and its recorded characteristics."@en ;
+ rdfs:subClassOf spec:SourceRecord ;
+ dcterms:description "Apply within the record, activity-related, spatial, and temporal scope specified in Sources."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_WORK> .
+
+spec:PermitRecord a owl:Class ;
+ rdfs:label "PermitRecord"@en ;
+ rdfs:comment "An administrative record documenting a permit for the work identified in the record."@en ;
+ rdfs:subClassOf spec:SourceRecord ;
+ dcterms:description "Modeled building context B01; no observed application records."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-SEUMTER> .
+
+spec:CommencementRecord a owl:Class ;
+ rdfs:label "CommencementRecord"@en ;
+ rdfs:comment "An administrative record reporting the commencement of the work identified in the record."@en ;
+ rdfs:subClassOf spec:SourceRecord ;
+ dcterms:description "Modeled building context B01; no observed application records."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-SEUMTER> .
+
+spec:ProcurementRecord a owl:Class ;
+ rdfs:label "ProcurementRecord"@en ;
+ rdfs:comment "A record, such as a tender or award notice, that documents procurement information about the work or service it identifies."@en ;
+ rdfs:subClassOf spec:SourceRecord ;
+ dcterms:description "Apply within the record, activity-related, spatial, and temporal scope specified in Sources. The isAboutWork relation targets the actual ConstructionWork. Documentary support for the service in Figure 2 is shown by a dashed arrow and does not add an ontology predicate."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-NOTICES> .
+
+spec:StructureRegisterRecord a owl:Class ;
+ rdfs:label "StructureRegisterRecord"@en ;
+ rdfs:comment "A register entry that identifies and describes a physical structure."@en ;
+ rdfs:subClassOf spec:SourceRecord ;
+ dcterms:description "CALS and FMS facility records are observed; the Seumter building-register application remains unpopulated."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_REGISTER>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-FMS>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-SEUMTER> .
+
+spec:InspectionRecord a owl:Class ;
+ rdfs:label "InspectionRecord"@en ;
+ rdfs:comment "A source record documenting an inspection or assessment plan, or completed inspection or assessment history, including the structure, dates, and results reported in the record. A plan does not represent an additional performed Inspection."@en ;
+ rdfs:subClassOf spec:SourceRecord ;
+ dcterms:description "Apply within the record, activity-related, spatial, and temporal scope specified in Sources. Supporting record locators are retained in source information and relation annotations. The model does not define a direct predicate from InspectionRecord to Inspection."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_REGISTER>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-FMS> .
+
+spec:represents a owl:ObjectProperty ;
+ rdfs:label "represents"@en ;
+ rdfs:comment "Relates an IntegratedWorkData representation to the ConstructionWork it represents."@en ;
+ rdfs:domain spec:IntegratedWorkData ;
+ rdfs:range spec:ConstructionWork ;
+ dcterms:description "A study-defined representation of the actual work."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-STUDY> .
+
+spec:describes a owl:ObjectProperty ;
+ rdfs:label "describes"@en ;
+ rdfs:comment "Relates a ConstructionLedgerRecord or WorkRecord to the ConstructionWork it describes."@en ;
+ rdfs:domain [ a owl:Class ; owl:unionOf ( spec:ConstructionLedgerRecord spec:WorkRecord ) ] ;
+ rdfs:range spec:ConstructionWork ;
+ dcterms:description "Based on recorded work particulars; cross-system comparison is a separate evidential step."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-KISCON>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_WORK> .
+
+spec:isAboutStructure a owl:ObjectProperty ;
+ rdfs:label "isAboutStructure"@en ;
+ rdfs:comment "Relates a StructureRegisterRecord to the Structure it concerns."@en ;
+ rdfs:domain spec:StructureRegisterRecord ;
+ rdfs:range spec:Structure ;
+ dcterms:description "The structure identified by the register entry and its identifiers."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_REGISTER>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-FMS>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-SEUMTER> .
+
+spec:isAboutWork a owl:ObjectProperty ;
+ rdfs:label "isAboutWork"@en ;
+ rdfs:comment "Relates a PermitRecord, CommencementRecord, or ProcurementRecord to the ConstructionWork it concerns."@en ;
+ rdfs:domain [ a owl:Class ; owl:unionOf ( spec:PermitRecord spec:CommencementRecord spec:ProcurementRecord ) ] ;
+ rdfs:range spec:ConstructionWork ;
+ dcterms:description "The work identified by the administrative or procurement record; building applications remain unpopulated."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-SEUMTER>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-NOTICES> .
+
+spec:isServiceForWork a owl:ObjectProperty ;
+ rdfs:label "isServiceForWork"@en ;
+ rdfs:comment "Relates an EngineeringService to the ConstructionWork for which it is commissioned."@en ;
+ rdfs:domain spec:EngineeringService ;
+ rdfs:range spec:ConstructionWork ;
+ dcterms:description "The target work named in the service record; R3 uses the Wonju notices and a comparison of the collected records."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-NOTICES>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CEMS>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_WORK> .
+
+spec:isContractFor a owl:ObjectProperty ;
+ rdfs:label "isContractFor"@en ;
+ rdfs:comment "Relates a Contract to the ConstructionWork or EngineeringService it concerns."@en ;
+ rdfs:domain spec:Contract ;
+ rdfs:range [ a owl:Class ; owl:unionOf ( spec:ConstructionWork spec:EngineeringService ) ] ;
+ dcterms:description "Recorded contractual particulars concerning the activity; no separate contract instrument is presumed."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-KISCON>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_WORK>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-NOTICES> .
+
+spec:participatesIn a owl:ObjectProperty ;
+ rdfs:label "participatesIn"@en ;
+ rdfs:comment "Relates an Organisation to the ConstructionWork or EngineeringService in which it participates."@en ;
+ rdfs:domain spec:Organisation ;
+ rdfs:range [ a owl:Class ; owl:unionOf ( spec:ConstructionWork spec:EngineeringService ) ] ;
+ dcterms:description "Participation and shares remain attached to construction or service activities; they are not assigned to system-operation roles or automatically to each facility."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-KISCON>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-NOTICES>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_WORK> .
+
+spec:createsStructure a owl:ObjectProperty ;
+ rdfs:label "createsStructure"@en ;
+ rdfs:comment "Relates a ConstructionWork to a Structure it creates."@en ;
+ rdfs:domain spec:ConstructionWork ;
+ rdfs:range spec:Structure ;
+ dcterms:description "Work-to-outcome information in CALS or an original-work field in a register."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_WORK>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_REGISTER> .
+
+spec:modifiesStructure a owl:ObjectProperty ;
+ rdfs:label "modifiesStructure"@en ;
+ rdfs:comment "Relates a MaintenanceWork to the Structure it modifies."@en ;
+ rdfs:domain spec:MaintenanceWork ;
+ rdfs:range spec:Structure ;
+ dcterms:description "Evidence for the later work supports its recorded segment extent; R4 does not establish bridge-only treatment."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-QUALITY> .
+
+spec:forStructure a owl:ObjectProperty ;
+ rdfs:label "forStructure"@en ;
+ rdfs:comment "Relates an Inspection to the Structure it assesses."@en ;
+ rdfs:domain spec:Inspection ;
+ rdfs:range spec:Structure ;
+ dcterms:description "The structure identified in an inspection or assessment; a plan is not a completed event."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-CALS_REGISTER>, <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-FMS> .
+
+spec:hasMapping a owl:ObjectProperty ;
+ rdfs:label "hasMapping"@en ;
+ rdfs:comment "Associates an integrated information representation with a study-defined RecordMapping that links it to a contributing source record."@en ;
+ rdfs:domain spec:IntegratedWorkData ;
+ rdfs:range spec:RecordMapping ;
+ dcterms:description "Connects an integrated representation to a study-defined mapping, retaining the evidence and scope."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-STUDY> .
+
+spec:sourceRecord a owl:ObjectProperty ;
+ rdfs:label "sourceRecord"@en ;
+ rdfs:comment "Relates a study-defined RecordMapping to its contributing SourceRecord."@en ;
+ rdfs:domain spec:RecordMapping ;
+ rdfs:range spec:SourceRecord ;
+ dcterms:description "Connects a mapping to its contributing record, including any relevant SourceRecord subtype."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-STUDY> .
+
+spec:evidenceBasis a owl:AnnotationProperty ;
+ rdfs:label "evidenceBasis"@en ;
+ rdfs:comment "One of the evidence bases defined in the connection review criteria in Table 1 of the manuscript."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-STUDY> .
+
+spec:scope a owl:AnnotationProperty ;
+ rdfs:label "scope"@en ;
+ rdfs:comment "The recorded extent of a relationship, including its section or segment where applicable."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-STUDY> .
+
+spec:sourceIdentifier a owl:AnnotationProperty ;
+ rdfs:label "sourceIdentifier"@en ;
+ rdfs:comment "The original identifier or locator of the supporting record."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-STUDY> .
+
+spec:observationDate a owl:AnnotationProperty ;
+ rdfs:label "observationDate"@en ;
+ rdfs:comment "The date on which the supporting record was observed."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-STUDY> .
+
+spec:ruleVersion a owl:AnnotationProperty ;
+ rdfs:label "ruleVersion"@en ;
+ rdfs:comment "The version of the candidate-review rule applied."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-STUDY> .
+
+spec:validity a owl:AnnotationProperty ;
+ rdfs:label "validity"@en ;
+ rdfs:comment "The recorded validity of the assertion, including known absences."@en ;
+ dcterms:source <https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl#source-STUDY> .
+
+<https://raw.githubusercontent.com/YoonsleeProjects/ConstructionOntology/main/infrastructure-continuity-spec.ttl> dcterms:license <https://creativecommons.org/licenses/by/4.0/> .
