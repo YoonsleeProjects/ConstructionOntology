@@ -9,3 +9,5 @@ Read the [HTML supplement](https://yoonsleeprojects.github.io/ConstructionOntolo
 This supplement contains the ontology documentation and figures. Original source records and the empirical case dataset are not included.
 
 Version 1.0. Licensed under [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/); see [LICENSE](LICENSE).
+
+Archived at Zenodo: https://doi.org/10.5281/zenodo.23024444 (version 1.0). Concept DOI for all versions: https://doi.org/10.5281/zenodo.23024443.
